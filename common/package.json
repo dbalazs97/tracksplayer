@@ -1,4 +1,7 @@
 {
 	"name": "tracksplayer-common",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"devDependencies": {
+		"typescript": "^4.0.3"
+	}
 }
