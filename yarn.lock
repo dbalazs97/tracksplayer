@@ -1210,6 +1210,46 @@
   dependencies:
     schematics-utilities "^1.1.1"
 
+"@fortawesome/angular-fontawesome@0.7.x":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/angular-fontawesome/-/angular-fontawesome-0.7.0.tgz#af9ac19e035960e9c05615ae86aac3b737ad7b13"
+  integrity sha512-U+eHYbKuVYrrm9SnIfl+z+6KTiI4Pu+S2OKh34JIi7C1jHhDcrVeDZISP/cpswHY7LWWDOPYeKE+yuWFlL4aVw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@fortawesome/fontawesome-common-types@^0.2.31":
+  version "0.2.31"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.31.tgz#f15a39e5ab4e5dfda0717733bcacb9580e666ad9"
+  integrity sha512-xfnPyH6NN5r/h1/qDYoGB0BlHSID902UkQzxR8QsoKDh55KAPr8ruAoie12WQEEQT8lRE2wtV7LoUllJ1HqCag==
+
+"@fortawesome/fontawesome-svg-core@^1.2.28":
+  version "1.2.31"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.31.tgz#23fff9c521f1b57e79e4c2fd6cce8aa794e9d99e"
+  integrity sha512-lqUWRK+ylHQJG5Kiez4XrAZAfc7snxCc+X59quL3xPfMnxzfyf1lt+/hD7X1ZL4KlzAH2KFzMuEVrolo/rAkog==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.31"
+
+"@fortawesome/free-brands-svg-icons@^5.13.0":
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.15.0.tgz#ec8d5f61154580ed28d378b76d1186932392c2a4"
+  integrity sha512-Qy6sOeSIYfjCQ2CFa/VKQZUo1ycOzoRP7AtITHRp0lmWP1DTgEa1Ow22CgaSh7lNcDbRs5u/v/h2wtjSb2ox4A==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.31"
+
+"@fortawesome/free-regular-svg-icons@^5.13.0":
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.15.0.tgz#6be839db8ee97facafd94fb8be180b2f28cf0d9f"
+  integrity sha512-kgdP2N5sFjzs5+XFZTsz8KNJjXm/851Gtjh8FcG+gpzN4weN/pd9S1jrf1e+2naWughHUzo7AKAzFB2CodpJ3g==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.31"
+
+"@fortawesome/free-solid-svg-icons@^5.13.0":
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.0.tgz#6f553f25cdebd7d5ae778598c2ddd3321dd63450"
+  integrity sha512-4dGRsOnGBPM7c0fd3LuiU6LgRSLn01rw1LJ370yC2iFMLUcLCLLynZhQbMhsiJmMwQM/YmPQblAdyHKVCgsIAA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.31"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -1766,6 +1806,13 @@
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
+
+"@types/musicmetadata@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@types/musicmetadata/-/musicmetadata-2.0.4.tgz#84f8dede180d7258f56f5d455fec905a122c583d"
+  integrity sha512-sZoVUsjNUdgryvFMQOWcYXD7Xi5jBwa7QArwgwfXh4B0w0Wqq2rExeX852GxyBVsPzZzA28ZuSjsJc+p5Y8nng==
+  dependencies:
+    "@types/node" "*"
 
 "@types/node@*":
   version "14.11.2"
@@ -2998,6 +3045,11 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
+bulma@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.1.tgz#2bf0e25062a22166db5c92e8c3dcb4605ab040d8"
+  integrity sha512-LSF69OumXg2HSKl2+rN0/OEXJy7WFEb681wtBlNS/ulJYR27J3rORHibdXZ6GVb/vyUzzYK/Arjyh56wjbFedA==
+
 busboy@^0.2.11:
   version "0.2.14"
   resolved "https://registry.yarnpkg.com/busboy/-/busboy-0.2.14.tgz#6c2a622efcf47c57bbbe1e2a9c37ad36c7925453"
@@ -4092,6 +4144,11 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
+deep-equal@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-0.2.1.tgz#fad7a793224cbf0c3c7786f92ef780e4fc8cc878"
+  integrity sha1-+tenkyJMvww8d4b5LveA5PyMyHg=
+
 deep-equal@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
@@ -5122,6 +5179,13 @@ file-uri-to-path@1.0.0:
   resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
   integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
 
+filereader-stream@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/filereader-stream/-/filereader-stream-0.2.0.tgz#16374a202715b640b666ecffd07089938e9ff11f"
+  integrity sha1-FjdKICcVtkC2Zuz/0HCJk46f8R8=
+  dependencies:
+    inherits "1.0.0"
+
 fill-range@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-4.0.0.tgz#d544811d428f98eb06a63dc402d2403c328c38f7"
@@ -5952,6 +6016,11 @@ inflight@^1.0.4:
   dependencies:
     once "^1.3.0"
     wrappy "1"
+
+inherits@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-1.0.0.tgz#38e1975285bf1f7ba9c84da102bb12771322ac48"
+  integrity sha1-OOGXUoW/H3upyE2hArsSdxMirEg=
 
 inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.4"
@@ -7785,6 +7854,17 @@ multicast-dns@^6.0.1:
   dependencies:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
+
+musicmetadata@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/musicmetadata/-/musicmetadata-2.0.5.tgz#7ae910d99fbaee05f2bd543aef10b6fbe1f37bd4"
+  integrity sha1-eukQ2Z+67gXyvVQ67xC2++Hze9Q=
+  dependencies:
+    deep-equal "0.2.1"
+    filereader-stream "^0.2.0"
+    is-stream "^1.1.0"
+    strtok2 "~1.0.0"
+    through "~2.3.4"
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -10718,6 +10798,11 @@ strip-json-comments@^3.1.0:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
+strtok2@~1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/strtok2/-/strtok2-1.0.4.tgz#df9ffb2e70a3336b4660e267ef0547e610275fc1"
+  integrity sha1-35/7LnCjM2tGYOJn7wVH5hAnX8E=
+
 style-loader@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.2.1.tgz#c5cbbfbf1170d076cfdd86e0109c5bba114baa1a"
@@ -10977,7 +11062,7 @@ through2@^2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-"through@>=2.2.7 <3", through@X.X.X, through@^2.3.6:
+"through@>=2.2.7 <3", through@X.X.X, through@^2.3.6, through@~2.3.4:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=

@@ -1,1 +1,44 @@
-<p>tracksplayer works</p>
+<main class="container">
+	<ng-container *ngFor="let provider of providerManager.registeredProviders">
+		<button (click)="provider.connect()" *ngIf="!provider.isConnected" class="button is-primary">
+			<fa-icon [icon]="provider.icon"></fa-icon>&nbsp;{{ provider.name }}
+		</button>
+		<button *ngIf="provider.isConnected" class="button is-primary is-disabled" disabled>
+			<fa-icon [icon]="provider.icon"></fa-icon>&nbsp;{{ provider.name }} connected
+		</button>
+	</ng-container>
+
+	<div class="field">
+		<div class="control">
+			<label>
+				<input (ngModelChange)="onSearchChange()" [(ngModel)]="searchField" class="input is-success" placeholder="Search for tracks..." type="text">
+			</label>
+		</div>
+	</div>
+
+	<article *ngFor="let trackView of tracks | async; let index = index" class="media panel-block">
+		<figure class="media-left" style="display: flex; align-items: center;">
+			<fa-icon [icon]="trackView.provider.icon" [ngStyle]="{ 'margin-right': '16px' }" size="2x"></fa-icon>
+			<span class="image is-64x64">
+				<img *ngIf="trackView.track.artwork" [src]="trackView.track.artwork" alt="" height="64" width="64">
+			</span>
+		</figure>
+		<div class="media-content">
+			<div class="content">
+				<p>
+					<strong>{{ trackView.track.title || 'No title' }}</strong>
+				</p>
+				{{ trackView.track.artist || 'No artist' }} - {{ trackView.track.album || 'No album' }} - from {{ trackView.provider.name }}
+			</div>
+		</div>
+		<div class="media-right">
+			<button (click)="trackView.provider.loadToPlayer(trackView.track);" class="button is-primary is-rounded">
+		    <span class="icon is-small">
+		      <fa-icon [icon]="faPlay" size="1x"></fa-icon>
+		    </span>
+			</button>
+		</div>
+	</article>
+
+	<router-outlet></router-outlet>
+</main>

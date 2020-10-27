@@ -1,0 +1,22 @@
+.player {
+	display: flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+}
+
+.progress-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+
+	.progress-control {
+		margin-bottom: 0;
+	}
+
+	.time-display {
+		margin: 0 32px;
+	}
+}

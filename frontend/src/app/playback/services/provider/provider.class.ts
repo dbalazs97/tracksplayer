@@ -1,9 +1,13 @@
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { Track } from 'tracksplayer-common';
-import { WithLifeCycle } from '../interfaces/with-lifecycle.interface';
-import { Player } from '../player/player.class';
+import { WithLifeCycle } from '../../../core/interfaces/with-lifecycle.interface';
 
 export abstract class Provider implements WithLifeCycle {
 	public abstract isConnected: boolean;
+
+	public abstract name: string;
+
+	public abstract icon: IconDefinition;
 
 	public abstract initialize(): Promise<boolean>;
 
@@ -15,5 +19,5 @@ export abstract class Provider implements WithLifeCycle {
 
 	public abstract async get(id: string): Promise<Track>;
 
-	public abstract async getPlayer(id: string): Promise<Player>;
+	public abstract async loadToPlayer(id: Track): Promise<void>;
 }

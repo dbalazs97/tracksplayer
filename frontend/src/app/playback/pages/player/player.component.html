@@ -1,0 +1,42 @@
+<br>
+
+<div class="notification is-primary player">
+	<article class="media">
+		<figure class="media-left">
+		<span class="image is-64x64">
+			<img *ngIf="player.value?.track?.value" [src]="player.value?.track?.value?.artwork" alt="" height="64" width="64">
+			<img *ngIf="!player.value?.track?.value" alt="" src="https://via.placeholder.com/64/18191a/00E676?text=X">
+		</span>
+		</figure>
+		<div class="media-content">
+			<div class="content">
+				<strong>{{ player.value?.track?.value?.title || 'No title' }}</strong>
+				<p>{{ player.value?.track?.value?.artist || 'No artist' }} - {{ player.value?.track?.value?.album || 'No album' }}</p>
+			</div>
+		</div>
+	</article>
+
+	<button (click)="player.value?.play()" class="button is-primary is-rounded">
+		    <span class="icon is-small">
+		      <fa-icon [icon]="faPlay" size="1x"></fa-icon>
+		    </span>
+	</button>
+
+	<button (click)="player.value?.pause()" class="button is-primary is-rounded">
+		    <span class="icon">
+		      <fa-icon [icon]="faPause"></fa-icon>
+		    </span>
+	</button>
+
+	<button (click)="player.value?.pause()" class="button is-primary is-rounded">
+		    <span class="icon">
+		      <fa-icon [icon]="faStop"></fa-icon>
+		    </span>
+	</button>
+
+	<div class="progress-bar">
+		<div class="time-display">{{ (player.value | periodically:'position' | async) * 1000 | date:"mm:ss" }}</div>
+		<progress [max]="player.value?.track?.value?.length" [value]="player.value | periodically:'position' | async" class="progress-control progress is-small">15%</progress>
+		<div class="time-display">{{ (player.value?.track?.value?.length || 0) * 1000 | date:"mm:ss" }}</div>
+	</div>
+</div>

@@ -7,7 +7,8 @@
 		"build": "ng build",
 		"test": "ng test",
 		"lint": "ng lint",
-		"e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"postinstall": "ngcc --properties es2015 es5 browser module main --first-only --create-ivy-entry-points"
 	},
 	"private": true,
 	"dependencies": {
@@ -21,6 +22,13 @@
 		"@angular/router": "~10.1.2",
 		"@datorama/akita": "^5.2.4",
 		"@datorama/akita-ngdevtools": "^5.0.3",
+		"@fortawesome/angular-fontawesome": "0.7.x",
+		"@fortawesome/fontawesome-svg-core": "^1.2.28",
+		"@fortawesome/free-brands-svg-icons": "^5.13.0",
+		"@fortawesome/free-regular-svg-icons": "^5.13.0",
+		"@fortawesome/free-solid-svg-icons": "^5.13.0",
+		"bulma": "^0.9.1",
+		"musicmetadata": "^2.0.5",
 		"rxjs": "~6.6.0",
 		"tracksplayer-common": "0.0.1",
 		"tslib": "^2.0.0",
@@ -32,6 +40,7 @@
 		"@angular/compiler-cli": "~10.1.2",
 		"@types/jasmine": "~3.5.0",
 		"@types/jasminewd2": "~2.0.3",
+		"@types/musicmetadata": "^2.0.4",
 		"@types/node": "^12.11.1",
 		"codelyzer": "^6.0.0",
 		"jasmine-core": "~3.6.0",

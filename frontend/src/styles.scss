@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+$background: #2d2d2d;
+$background-light: #535353;
+$text: #E8F5E9;
+$text-strong: #E8F5E9;
+
+$green: #00E676;
+$blue: #82B1FF;
+$red: #EF9A9A;
+
+$scheme-main: $background;
+$strong-color: $green;
+
+$border: $background-light;
+$border-light: $background-light;
+
+$primary: $green;
+$info: $blue;
+$danger: $red;
+
+$link-hover: $green;
+$link-active: $green;
+$link-focus: $green;
+
+$link-hover-border: $green;
+$link-active-border: $green;
+$link-focus-border: $green;
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import "~bulma/bulma";
+
